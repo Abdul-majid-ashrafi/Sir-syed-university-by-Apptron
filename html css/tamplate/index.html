@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>1 Document</title>
+    <!-- internal style -->
+    <style>
+        body {
+            background-color: crimson;
+            margin: 0;
+        }
+
+        header {
+            border-bottom: 1px solid;
+            color: aliceblue;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px dotted white;
+            padding: 10px;
+        }
+
+        #parent {
+            display: flex;
+        }
+
+        #parent div {
+            background-color: aliceblue;
+            margin: 10px;
+        }
+
+        #parent h1 {
+            margin: 10px;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div>
+        <header class="center" id="parent">
+            <!-- <h1 style="background: gray; margin: 20px; padding: 20px">Cake Shop</h1> -->
+            <h1 id="currentTime">1:24 pm</h1>
+            <h1>Cake Shop</h1>
+            <h1 id="offer">Offer</h1>
+        </header>
+    </div>
+    <!-- Section 1 -->
+    <div class="center">
+        <p style="color: #FFF;"><strong>Note:</strong> Limited time offer this offer valid before <strong>2:00
+                PM</strong></p>
+        <img src="https://www.goodfood.com.au/content/dam/images/h/1/6/e/1/c/image.related.wideLandscape.940x529.h16iuf.png/1539904927690.jpg"
+            alt="cake">
+    </div>
+    <!-- Section 2 -->
+    <div id="parent" class="center">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam officiis culpa repellat corporis
+                numquam illo odit et minima adipisci quibusdam nisi esse ut quo dicta nemo! Reiciendis, quo qui!</p>
+            <img src="assest/cake-a.png" alt="cake img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam officiis culpa repellat corporis
+                numquam illo odit et minima adipisci quibusdam nisi esse ut quo dicta nemo! Reiciendis, quo qui!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam officiis culpa repellat corporis
+                numquam illo odit et minima adipisci quibusdam nisi esse ut quo dicta nemo! Reiciendis, quo qui!</p>
+            <img src="assest/cake-a.png" alt="cake img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam officiis culpa repellat corporis
+                numquam illo odit et minima adipisci quibusdam nisi esse ut quo dicta nemo! Reiciendis, quo qui!</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam officiis culpa repellat corporis
+                numquam illo odit et minima adipisci quibusdam nisi esse ut quo dicta nemo! Reiciendis, quo qui!</p>
+            <img src="assest/cake-c.png" alt="cake img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aperiam officiis culpa repellat corporis
+                numquam illo odit et minima adipisci quibusdam nisi esse ut quo dicta nemo! Reiciendis, quo qui!</p>
+        </div>
+    </div>
+
+</body>
+<script>
+    var currentTime = document.getElementById("currentTime");
+    setInterval(() => {
+        currentTime.innerHTML = new Date().toLocaleTimeString()
+    }, 1000);
+
+</script>
+
+
+
+
+</html>
