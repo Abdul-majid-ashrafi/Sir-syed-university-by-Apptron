@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For Loops</title>
+    <script>
+
+
+
+        // var fruits = ["Apple", "Banana", "Mango", "Pineapple"]
+        // document.write(fruits.join(""))
+
+        // var numbers = [10, 40, 20, 60, 30, 70]
+        // document.write(numbers.join(" $"))
+        // document.write(numbers.sort())
+        // var numbers = [9, 8, 7, 6, 5, " Hello ", 4, 3, 2, 1]
+        // document.write(numbers.reverse())
+
+        // var fruits = ["Apple", "Banana", "Mango", "Pineapple", "Banana", "Grapes"]
+        // document.write(fruits.indexOf("Banana"))
+
+        // var fruits = ["Apple", "Banana", "Mango", "Pineapple"]
+        // var students = ["Haider", "Ali", "Majid", "Mavia"];
+        // var mixed = fruits.concat(["Saylani", "Apptron"], students)// marge multi array
+        // document.write(mixed)
+
+        // var myName = "MAJID@Gmai.com"
+        // alert(myName.toUpperCase())
+        // alert(myName.toLowerCase())
+
+
+
+
+
+
+
+
+
+        /** without for loop **/
+
+        // var num = 5;
+        // num++
+        // alert(num)
+
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+
+        /** without for loop **/
+
+        //        var num = 0;
+        //
+        //        document.write(num + "<br>");
+        //        num += 1;
+        //        document.write(num + "<br>");
+
+
+
+        /** For Loops **/
+
+        /*
+            for (initializer ; condition ; incrementer/decrementer)
+            {
+
+            }
+         */
+
+
+
+        /** structure **/
+
+        //        for ( ; ; )
+        //        {
+        //
+        //        }
+
+
+
+
+
+
+        /** for loop **/
+
+        // for (var count = 0; count <= 5; count++) {
+        //     document.write(count + " Hello World<br>");
+        // }
+
+
+
+
+
+
+
+
+        /** for loop **/
+
+        // for (var num = 0; num <= 10; num++) {
+        //     document.write(num + "<br>");
+        // }
+
+
+
+
+
+
+
+        // var cleanestCities = ["Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+        // document.write("<h4>Cleanest Cities List</h4>");
+        // for (var i = 0; i < cleanestCities.length; i++) {
+        //     document.write(cleanestCities[i] + " at index " + i);
+        //     document.write("<br>");
+        // }
+
+
+
+
+
+
+
+
+
+
+        /** for loop - optional statements **/
+
+        // var num = 0;
+        // for (; num <= 10; num++) {
+        //     document.write(num + "<br>");
+        // }
+
+
+
+
+
+
+
+
+
+
+        /** for loop - optional statements **/
+
+        // for (var num = 0; ; num++) {
+        //     if (num <= 10) {
+        //         document.write(num + "<br>");
+        //     } else {
+        //         break;
+        //     }
+        // }
+
+
+
+
+
+
+
+
+        /** for loop - optional statements **/
+
+        // for (var num = 0; num <= 10;) {
+        //     document.write(num + "<br>");
+        //     num++;
+        // }
+
+
+
+
+        // /** Example - without for loop **/
+        // var cleanestCities = ["Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+        // var cityToCheck = prompt("Enter city name");
+        // if (cityToCheck === cleanestCities[0]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[1]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[2]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[3]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[3]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+
+
+
+        /** Example - with for loop **/
+        // var cleanestCities = ["Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+        // var cityToCheck = prompt("Enter city name");
+
+        // for (var i = 0; i < cleanestCities.length; i++) {
+        //     if (cityToCheck === cleanestCities[i]) {
+        //         alert("It's one of the cleanest cities");
+        //     }
+        // }
+
+
+
+
+        /** break statement **/
+
+        // for (var num = 0; num <= 10; num++) {
+        //     document.write(num + "<br>");
+        //     if (num === 5) {
+        //         break;
+        //     }
+        // }
+
+
+
+
+
+
+        /** flags **/
+
+        /** problem - without flags **/
+        // var cityToCheck = prompt("Enter city name");//Santa Fe
+        // var cleanestCities = ["Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+
+
+        // for (var i = 0; i < cleanestCities.length; i++) {
+        //     if (cityToCheck == cleanestCities[i]) {
+        //         alert("It's one of the cleanest cities");
+        //     } else {
+        //         alert("city not matched");
+        //     }
+        // }
+
+
+
+
+
+
+
+
+
+
+        /** solution - with flags **/
+        // var cityToCheck = prompt("Enter city name", "Tucson");//Tucson
+        // var cleanestCities = ["Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+
+        // var isMatch = false; //flag
+
+        // for (var i = 0; i < cleanestCities.length; i++) {
+        //     if (cityToCheck === cleanestCities[i]) {
+        //         isMatch = true;
+        //     }
+        // }
+
+        // if (isMatch === true) {
+        //     alert("It's one of the cleanest cities");
+        // } else if (isMatch === false) {
+        //     alert("city not matched");
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /** nested for loops **/
+        // var firstNames = ["Ali", "Sami", "Bilal"];
+        // var lastNames = ["Khan", "Shareef"];
+
+        // for (var i = 0; i < firstNames.length; i++) {
+        //     for (var j = 0; j < lastNames.length; j++) {
+        //         document.write(firstNames[i] + " " + lastNames[j]);
+        //         document.write("<br>");
+        //     }
+        // }
+
+
+
+
+
+
+
+
+
+
+
+        // for (var i = 0; i <= 4; i++) // 5 times
+        // {
+        //     for (var t = 0; t <= 2; t++) // 3 times
+        //     {
+        //         document.write("HELLO  <br>");
+        //     }
+        // }
+        // //5 x 3 = 15 times
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1><a href="https://web.facebook.com/groups/255836718224814" target="_blank">Learning Web Mobile App Development (Group)</a></h1>
+</body>
+
+</html>
