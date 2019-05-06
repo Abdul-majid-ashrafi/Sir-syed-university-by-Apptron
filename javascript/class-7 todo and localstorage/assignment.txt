@@ -1,0 +1,7 @@
+make login signup page with complete intractive UI (with out logic)
+when I click login button it should be go to home page where have to show navigation bar with 3 route/pages 
+1) complete resume
+2) complete calculator
+3) todo, user can add new todo and remove each todo item
+
+These task are most important for everyone
