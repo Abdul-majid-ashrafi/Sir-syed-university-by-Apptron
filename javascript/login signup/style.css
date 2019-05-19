@@ -1,0 +1,16 @@
+body{
+    background-color: antiquewhite;
+}
+#signup-container{
+    width: 50%;
+    margin: 0 auto;
+}
+#signup{
+    border: 2px solid;
+}
+
+#signup input{
+padding: 10px;
+margin: 10px
+}
+
